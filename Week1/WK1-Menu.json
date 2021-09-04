@@ -1,0 +1,65 @@
+{
+    "Appetizers": ["Loaded Fries","Beef Nachos"],
+    "Appetizer1": {
+        "name": "Loaded Fries",
+        "Ingredients": ["Potates", "Cheese", "Bacon"],
+        "Description": "Fries drizzled with mozzarella cheese and bacon bits"
+    },
+    "Appetizer2": {
+        "name": "Loaded Fries",
+        "Ingredients": ["Potates", "Cheese", "Bacon"],
+        "Description": "Fries drizzled with mozzarella cheese and bacon bits"
+    },
+
+
+    "ColdSandwiches": ["Turkey Sandwich", "Ham Sandwich"],
+    "Sandwich1": {
+        "name": "Turkey Sandwich",
+        "Ingredients":["Turkey", "Honey Wheat", "Muenster Cheese"],
+        "Description": "Cold turkey on honey wheat bread, draped with muenster cheese"
+    },
+    "Sandwich2": {
+        "name": "Ham Sandwich",
+        "Ingredients":["Ham", "White Bread", "Gouda Cheese"],
+        "Description": "Cold ham on white bread, draped with gouda cheese"
+    },
+
+
+    "HotSandwiches": ["BLT", "Buffalo Chicken"],
+    "Sandwich3": {
+        "name": "BLT",
+        "Ingredients":["Bacon", "Sesame Seed", "Lettuce", "Cheddar Cheese"],
+        "Description": "Bacon over lettuce and cheddar cheese, wrapped in a toasted sesame seed bun"
+    },
+    "Sandwich4": {
+        "name": "Buffalo Chicken",
+        "Ingredients":["1/2 Chicken breast", "Sesame Seed", "Lettuce", "Pepper jack", "Anthony's Buyffalo Sauce"],
+        "Description": "Buffalo chicken sandwich with Anthony's special buffalo. Added pepper jack in a sesame seed bun"
+    },
+
+
+    "Desserts": ["Lava Cake", "Chocolate chip Brownie"],
+    "Dessert1": {
+        "name": "Lava Cake",
+        "Ingredients":["Chocolate fudge", "Chocolate cake"],
+        "Description": "Hot lava cake with a chocolate fudge center"
+    },
+    "Dessert2": {
+        "name": "Chocolate Chip Brownie",
+        "Ingredients":["Chocolate chips", "Brownie mix", "cookie mix"],
+        "Description": "Brownie and chocolate chip cookie mix"
+    },
+
+    
+    "Drinks": ["Dr. Pepper", "Coke"],
+    "Drink1": {
+        "name": "Dr. Pepper",
+        "Ingredients":["Dr. Pepper Syrup", "carbonate water"],
+        "Description": "Dr. Pepper"  
+    },
+    "Drink2": {
+        "name": "Coke",
+        "Ingredients":["Coke Syrup", "carbonate water"],
+        "Description": "Coke"  
+    }
+}
