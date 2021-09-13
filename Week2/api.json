@@ -1,0 +1,121 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "When was the original Star Wars: Battlefront II released?",
+            "correct_answer": "October 31, 2005",
+            "incorrect_answers": [
+                "December 18, 2004",
+                "November 21, 2006",
+                "September 9, 2007"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is the name of the final boss in Turok: Dinosaur Hunter?",
+            "correct_answer": "The Campaigner",
+            "incorrect_answers": [
+                "The Primagen",
+                "Oblivion",
+                "Lord Tyrannus"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "boolean",
+            "difficulty": "easy",
+            "question": "Tetris is the #1 best-selling video game of all-time.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which 80s band is fronted by singer/guitarist Robert Smith?",
+            "correct_answer": "The Cure",
+            "incorrect_answers": [
+                "The Smiths",
+                "Echo &amp; the Bunnymen",
+                "New Order"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What year was Red Hot Chill Pepper&#039;s album &quot;Californication&quot; released?",
+            "correct_answer": "1999",
+            "incorrect_answers": [
+                "1997",
+                "2000",
+                "1992"
+            ]
+        },
+        {
+            "category": "General Knowledge",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What direction does the Statue of Liberty face?",
+            "correct_answer": "Southeast",
+            "incorrect_answers": [
+                "Southwest",
+                "Northwest",
+                "Northeast"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In the game &quot;Brawlhalla&quot;, what species is the character B&ouml;dvar is?",
+            "correct_answer": "Half Human / Half Bear",
+            "incorrect_answers": [
+                "A Human",
+                "Half Wolf / Half Bear",
+                "Half Tiger /  Half Human"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "In &quot;League of Legends&quot;, there exists four different types of Dragon.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Entertainment: Television",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which WWF wrestler had the nickname &quot;The Ayatollah of Rock &#039;N&#039; Rolla&quot;?",
+            "correct_answer": "Chris Jericho",
+            "incorrect_answers": [
+                "Marty Jannetty",
+                "Scott Hall",
+                "Shawn Michaels"
+            ]
+        },
+        {
+            "category": "Geography",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What mountain range lines the border between Spain and France?",
+            "correct_answer": "Pyrenees",
+            "incorrect_answers": [
+                "Alps",
+                "Carpathians",
+                "Urals"
+            ]
+        }
+    ]
+}
