@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+body {
+    background-image: url(https://i.gadgets360cdn.com/large/skywalker_saga_1588526257979.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    background-color: #010708;
+    color: whitesmoke;
+}
+
+#head-links {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(207, 207, 207);
+    font-size: 25px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: 1s font-size;
+    color: #010708;
+}
+
+a:hover {
+    font-size: 30px;
+}
+
+.container { 
+    height: 200px;
+    position: relative;
+}
+  
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+
+    transition: 1s background-color, 1s color;
+}
+
+button:hover {
+    background-color: #010708;
+    color: whitesmoke;
+}
+
+#characters {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 700px;
+}
+
+h2 {
+    padding: 10px;
+    text-decoration: underline;
+    color: red;
+}
+
+p {
+    font-size: 20px;
+}
