@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Axios Todo</title>
+        <link rel="stylesheet" href="./AxiosTodo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Anthony's Todo</h1>
+        <form name="todoform">
+            <input type="text" placeholder="Todo" name="title"> <br>
+            <input type="text" placeholder="Description" name="description"> <br>
+            <input type="number" placeholder="Price" name="price"> <br>
+            <label>Task Complete?</label> <br>
+            <input type="checkbox" name="todoComplete"> <br>
+
+            <button id="postTodo">Submit</button>
+        </form>
+
+        <div id="todoContainer"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./AxiosTodo.js"></script>
+    </body>
+</html>

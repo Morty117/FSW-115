@@ -1,0 +1,86 @@
+*{
+    font-family: 'Stick No Bills', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1620393470010-fd62b8ab841d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1MHxDRHd1d1hKQWJFd3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    background-color: #3F51B5;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 60px;
+    transition: font-size 1s;
+}
+
+h1:hover {
+    font-size: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#todoContainer {
+    display: flex;
+}
+
+.todo-card {
+    background-color: #3F51B5;
+    border: 1px solid black;
+    border-radius: 2%;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+label {
+    background-color: #3F51B5;
+    font-size: 20px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition: color 1s, background-color 1s;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: black;
+}
