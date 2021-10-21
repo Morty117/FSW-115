@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-title {
+    font-size: 50px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #FF9800, #FFEB3B);
+    padding: 15px;
+}
+
+.card-header {
+    font-size: 35px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #FF5722, #F44336);
+}
+
+#loaderImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
