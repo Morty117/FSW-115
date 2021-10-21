@@ -22,13 +22,19 @@ const displayFavCards = (cards) => {
     let cardAtk = document.createElement('p')
     let cardImg = document.createElement('img')
     let deleteCard = document.createElement('button')
+    let drawCard = document.createElement('button')
+
+    cardsContainer.classList.add('fav-cards')
 
     cardName.innerHTML = cards[i].name
     cardAtk.innerHTML = cards[i].price
     cardImg.src = cards[i].description
+    drawCard.innerHTML = 'DrawCard'
+    drawCard.id = cards[i]._id
     deleteCard.innerHTML = 'Delete From Deck'
     deleteCard.id = cards[i]._id
 
+    drawCard.addEventListener('click', putDeck)
     deleteCard.addEventListener('click', deleteCards)
 
     cardsContainer.appendChild(cardName)
@@ -55,8 +61,6 @@ const getYugiApi = () => {
         removeLoad()
         console.log(response.data.data)
 
-        // Do I build the post inside of here to the BU API or the displayCard?
-
         let cards = response.data.data
         displayCard(cards)
     })
@@ -68,7 +72,6 @@ const removeLoad = () => {
 }
 
 const displayCard = card => {
-    
     // When I run the for loop, it doesn't understand the .length property
     for(let i = 0; i < card.length; i++){
        
@@ -77,6 +80,8 @@ const displayCard = card => {
         let cardArcheType = document.createElement('p')
         let cardAtk = document.createElement('p')
         let cardImg = document.createElement('img')
+
+        cardsContainer.classList.add('all-cards')
 
         cardName.innerHTML = card[i].name
         cardArcheType.innerHTML = card[i].archetype
@@ -139,7 +144,38 @@ const postToDeck = (e) => {
 const putDeck = () => {
     axios.put('http://api.bryanuniversity.edu/anthonyHernandez/list')
         .then(res => {
-            console.log(res)
+            displayDrawCard(res.data)
         })
         .catch(err => console.log(err))
+}
+
+const displayDrawCard = (cards) => {
+    document.getElementById('favorites').innerHTML = ''
+
+   for(let i = 0; i < cards.length; i++){
+    let cardsContainer = document.createElement('div')
+    let cardName = document.createElement('h2')
+    let cardAtk = document.createElement('p')
+    let cardImg = document.createElement('img')
+    let deleteCard = document.createElement('button')
+
+    cardsContainer.classList.add('fav-cards')
+
+    cardName.innerHTML = cards[i].name
+    cardAtk.innerHTML = cards[i].price
+    cardImg.src = cards[i].description
+    
+    deleteCard.innerHTML = 'Delete From Deck'
+    deleteCard.id = cards[i]._id
+
+    deleteCard.addEventListener('click', deleteCards)
+
+    cardsContainer.appendChild(cardName)
+    cardsContainer.appendChild(cardAtk)
+    cardsContainer.appendChild(cardImg)
+    cardsContainer.appendChild(deleteCard)
+
+    // set the container to a variable and append the cards container to the variable
+    document.getElementById('draw').appendChild(cardsContainer)
+   }
 }
