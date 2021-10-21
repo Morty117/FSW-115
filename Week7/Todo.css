@@ -36,3 +36,14 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.fav-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}

@@ -12,6 +12,7 @@ const getBUApi = () => {
     })
     .catch(err => console.log(err))
 }
+getBUApi()
 
 const displayFavCards = (cards) => {
     document.getElementById('favorites').innerHTML = ''
@@ -29,10 +30,12 @@ const displayFavCards = (cards) => {
     cardName.innerHTML = cards[i].name
     cardAtk.innerHTML = cards[i].price
     cardImg.src = cards[i].description
-    drawCard.innerHTML = 'DrawCard'
-    drawCard.id = cards[i]._id
+    
     deleteCard.innerHTML = 'Delete From Deck'
     deleteCard.id = cards[i]._id
+
+    drawCard.innerHTML = 'DrawCard'
+    drawCard.id = cards[i]._id
 
     drawCard.addEventListener('click', putDeck)
     deleteCard.addEventListener('click', deleteCards)
@@ -40,6 +43,7 @@ const displayFavCards = (cards) => {
     cardsContainer.appendChild(cardName)
     cardsContainer.appendChild(cardAtk)
     cardsContainer.appendChild(cardImg)
+    cardsContainer.appendChild(drawCard)
     cardsContainer.appendChild(deleteCard)
 
     // set the container to a variable and append the cards container to the variable
@@ -67,6 +71,8 @@ const getYugiApi = () => {
     .catch(err => console.log(err))
 }
 
+getYugiApi()
+
 const removeLoad = () => {
     document.getElementById('loaderImg').remove()
 }
@@ -84,7 +90,11 @@ const displayCard = card => {
         cardsContainer.classList.add('all-cards')
 
         cardName.innerHTML = card[i].name
-        cardArcheType.innerHTML = card[i].archetype
+        if(card[i].archetype){
+            cardArcheType.innerHTML = card[i].archetype
+        } else {
+            cardArcheType.innerHTML = 'Does not have an archetype'
+        }
         if(card[i].atk){
             cardAtk.innerHTML = card[i].atk
         } else {
@@ -145,6 +155,7 @@ const putDeck = () => {
     axios.put('http://api.bryanuniversity.edu/anthonyHernandez/list')
         .then(res => {
             displayDrawCard(res.data)
+            getBUApi()
         })
         .catch(err => console.log(err))
 }
