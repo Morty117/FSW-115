@@ -36,6 +36,7 @@ const displayFavCards = (cards) => {
 
     drawCard.innerHTML = 'DrawCard'
     drawCard.id = cards[i]._id
+    drawCard.value = cards[i].isComplete
 
     drawCard.addEventListener('click', putDeck)
     deleteCard.addEventListener('click', deleteCards)
@@ -140,7 +141,7 @@ const postToDeck = (e) => {
             } else {
                 card.description = 'https://assets.dicebreaker.com/yu-gi-oh-tcg-yugi-art.png/BROK/resize/1920%3E/format/jpg/quality/80/yu-gi-oh-tcg-yugi-art.png'
             }
-            console.log(card)
+            
             axios.post('http://api.bryanuniversity.edu/anthonyHernandez/list', card)
                 .then(response => {
                     console.log(response)
@@ -151,9 +152,24 @@ const postToDeck = (e) => {
         .catch(err => console.log(err))
 }
 
-const putDeck = () => {
-    axios.put('http://api.bryanuniversity.edu/anthonyHernandez/list')
+const putDeck = (e) => {
+    // let id = e.target.id
+    // let value = e.target.value
+
+    // if(value === 'true'){
+    //     value = false
+    // } else {
+    //     value = true
+    //     // description.style.textDecoration = "line-through"
+    // }
+
+    // let drawCardData = {
+    //     value = true
+    // }
+
+    axios.put(`http://api.bryanuniversity.edu/anthonyHernandez/list/${id}`, drawCardData)
         .then(res => {
+            console.log(res.data)
             displayDrawCard(res.data)
             getBUApi()
         })
